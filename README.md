@@ -34,12 +34,13 @@ src/
 
 -modulo/
 
-  --Equipo.java
-  --Partido.java
-  --Torneo.java
+  -- Equipo.java
+  -- Partido.java
+  -- Torneo.java
+
 -test/
 
-  --Test.java
+  -- Test.java
 
 
 - modulo: contiene las clases del dominio y la lógica del torneo
