@@ -1,18 +1,19 @@
  SISTEMA DE TORNEO DE FÚTBOL (JAVA)
 
-Proyecto académico desarrollado en Java que modela la gestión de un torneo de fútbol, contemplando equipos, partidos, resultados y reglas básicas del torneo, aplicando principios de Programación Orientada a Objetos.
+Proyecto académico desarrollado en Java que modela la gestión integral de un torneo de fútbol, contemplando jugadores, entrenadores, equipos, partidos, estadísticas y generación de reportes, aplicando principios de Programación Orientada a Objetos.
 
 --
 
  OBJETIVOS DEL PROYECTO
 
 Simular un sistema que permita:
-- Administrar equipos participantes
-- Gestionar partidos y resultados
-- Aplicar reglas básicas de un torneo
-- Centralizar la lógica del sistema en una clase principal de gestión
+- Administrar torneos de fútbol de distinta duración
+- Gestionar equipos, jugadores y entrenadores
+- Registrar partidos y estadísticas por jugador
+- Aplicar reglas de negocio deportivas
+- Generar reportes y tablas estadísticas del torneo
 
-El foco del proyecto está puesto en la claridad del dominio, la organización de entidades y la correcta aplicación de conceptos OO.
+El foco del proyecto está puesto en el modelado del dominio, la implementación de casos de uso reales y la correcta aplicación de conceptos OO.
 
 --
 
@@ -20,33 +21,60 @@ El foco del proyecto está puesto en la claridad del dominio, la organización d
 
 - Programación Orientada a Objetos (POO)
 - Encapsulamiento
+- Herencia (Persona)
+- Polimorfismo
 - Separación de responsabilidades
 - Uso de colecciones (ArrayList)
-- Métodos de negocio
-- Clases de dominio
-- Clase de prueba para validación del funcionamiento
+- Clases de dominio y clases de reporte
+- Métodos de negocio y validaciones
+- Ordenamiento de listas
+- Clase de prueba para validación de casos de uso
 
 --
 
  ESTRUCTURA DEL PROYECTO
-
 src/
 
--modulo/
+-modelo/
 
-  -- Equipo.java
-  -- Partido.java
-  -- Torneo.java
+  - Persona.java
+  - Jugador.java
+  - Entrenador.java
+  - Equipo.java
+  - Torneo.java
+  - Partido.java
+  - Estadistica.java
+  - Sistema.java
+  - Goleador.java
+  - Asistencia.java
+  - Posicion.java
+  - Ganador.java
 
 -test/
 
-  -- Test.java
+  - Test.java
 
+ modelo: contiene las entidades del dominio, la lógica del sistema y las clases auxiliares de reporte
+ test: contiene la clase de prueba donde se validan los casos de uso solicitados
 
-- modulo: contiene las clases del dominio y la lógica del torneo
+--
 
-- test: contiene una clase de prueba para ejecutar y validar el funcionamiento
+ CASOS DE USO IMPLEMENTADOS
 
+- Alta, baja y búsqueda de jugadores, entrenadores, equipos y torneos
+- Asociación de jugadores a equipos
+- Asociación de equipos a torneos
+- Registro de partidos y estadísticas
+- Búsquedas por criterios (fecha, táctica, fundación)
+- Cálculo de:
+-goles y asistencias por jugador
+-altura promedio por equipo
+-puntos acumulados
+- Generación de:
+-tabla de posiciones
+-tabla de goleadores
+-tabla de asistidores
+-listado de ganadores por fecha
 
 --
 
@@ -60,9 +88,9 @@ src/
 
  NOTAS
 
-- Proyecto realizado con fines académicos
+- Proyecto realizado en el marco de un laboratorio académico grupal
 - No utiliza frameworks externos
-- Enfocado en lógica, organización y legibilidad del código
+- Enfocado en lógica de negocio, diseño del dominio y claridad del código
 
 --
 
