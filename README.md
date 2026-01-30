@@ -55,6 +55,7 @@ src/
   - Test.java
 
  modelo: contiene las entidades del dominio, la lógica del sistema y las clases auxiliares de reporte
+
  test: contiene la clase de prueba donde se validan los casos de uso solicitados
 
 --
